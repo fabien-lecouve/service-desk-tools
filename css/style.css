@@ -64,6 +64,7 @@ main .section__notes > div > div {
   gap: 8px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 @media (min-width: 769px) {
   main .section__notes > div > div {

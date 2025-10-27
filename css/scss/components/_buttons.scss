@@ -7,22 +7,19 @@ button {
     border-radius: 8px;
     cursor: pointer;
     text-transform: uppercase;
-    // font-weight: 500;
 }
 
 button.active {
     background-color: $blue-dark;
     color: $white;
-    // cursor: pointer;
 }
 
 button.inactive {
-    background-color: $grey-light;
-    // cursor: pointer;
+    background-color: $white;
 }
 
 button.copied {
-  outline: none; // on retire le contour net
+  outline: none;
   box-shadow: 0 0 8px 8px $white;
   transition: box-shadow 0.2s ease;
 }

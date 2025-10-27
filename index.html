@@ -7,8 +7,7 @@
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
     <title>Click and Paste</title>
@@ -17,15 +16,17 @@
 <body>
     <header>
         <div>
-            <button type="button" value="lacoste" id="lacoste">Lacoste</button>
-            <button type="button" value="urgo" id="urgo">Urgo</button>
-        </div>
+            <div>
+                <button type="button" value="lacoste" id="lacoste">Lacoste</button>
+                <button type="button" value="urgo" id="urgo">Urgo</button>
+            </div>
 
-        <h1>click & paste</h1>
+            <h1>click & paste</h1>
 
-        <div>
-            <button type="button" value="fr" id="fr">FR</button>
-            <button type="button" value="en" id="en">EN</button>
+            <div>
+                <button type="button" value="fr" id="fr">FR</button>
+                <button type="button" value="en" id="en">EN</button>
+            </div>
         </div>
     </header>
 
@@ -86,13 +87,21 @@
             <h2>incidents généraux</h2>
             <div class="section__notes">
                 <div>
+                    <h3>Template erreur</h3>
+                    <div>
+                        <button type="button" value="incident_error_template_requirements">prérequis</button>
+                        <button type="button" value="incident_error_template_wn" class="wn">work note</button>
+                    </div>
+                </div>
+
+                <div>
                     <h3>Procédures générales</h3>
                     <div>
                         <button type="button" value="private_browsing_chrome">Navigation privée Chrome</button>
                         <button type="button" value="clear_cache_chrome">Vidage cache Chrome</button>
-                        <!-- <button type="button" value="page_inaccessible" >Page inaccessible</button> -->
                     </div>
                 </div>
+
             </div>
         </section>
 
@@ -142,26 +151,28 @@
                 <div>
                     <h3>ajout matricule</h3>
                     <div>
-                        <button type="button" value="request_external_account_creation_with_registration_wn" class="wn">work note</button>
-                        <button type="button" value="request_external_account_creation_with_registration_resolution">résolution</button>
+                        <button type="button" value="request_external_account_creation_with_registration_wn"
+                            class="wn">work note</button>
+                        <button type="button"
+                            value="request_external_account_creation_with_registration_resolution">résolution</button>
                     </div>
                 </div>
 
-                
+
                 <div>
                     <h3>création compte</h3>
                     <div>
                         <button type="button" value="request_account_creation">Par le manager</button>
                     </div>
                 </div>
-                
+
                 <div>
                     <h3>compte externe</h3>
                     <div>
                         <button type="button" value="request_external_account_creation">Par le desk</button>
                     </div>
                 </div>
-                
+
                 <div>
                     <h3>code NIP</h3>
                     <div>
@@ -172,7 +183,7 @@
                 <div>
                     <h3>MDP + SSPR</h3>
                     <div>
-                        
+
                         <button type="button" value="request_sspr_password_resolution">résolution</button>
                     </div>
                 </div>
@@ -284,4 +295,5 @@
 
     <script src="app.js"></script>
 </body>
+
 </html>

@@ -3,7 +3,11 @@
     font-weight: 400;
 }
 
-h1,
+h1 {
+    font-family: "Lora", serif;
+    text-transform: uppercase;
+}
+
 h2,
 h3 {
     text-transform: capitalize;

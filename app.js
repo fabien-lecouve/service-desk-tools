@@ -126,6 +126,21 @@ const notes = [
     },
     // INCIDENTS GENERAUX
     {
+        slug: "incident_error_template_requirements",
+        translations: {
+            fr: "Incident :\n_ Quel est le problème rencontré ?\n_ Quel est le numéro de l'appareil ?\n_ Quelle(s) application(s) ou logiciel(s) sont concernées ?\n_ Quel(le) erreur/message d'erreur rencontrez-vous ? Pourriez-vous nous fournir un screenshot ?\n_ Depuis quelle date (jour et heure exacte) rencontrez-vous ce problème ?\n_ Qu'avez-vous fait pour tenter de résoudre l'incident ?\n\nContact :\nEn vue d'une intervention des équipes de proximité, pourriez-vous nous fournir :\n_ la localisation précise de l'incident\n_ votre numéro de téléphone\n_ vos horaires de disponibilité",
+            en: "Incident :\n_ What is the problem ?\n_ What is the device ID ?\n_ Which application(s) or software are affected ?\n_ What error/error message are you experiencing? Could you provide us with a screenshot ?\n_ Since what date (day and exact time) have you been experiencing this problem ?\n_ What are your efforts to resolve the incident ?\n\nContact :\nIn order for our local teams to respond, could you provide us with :\n_ The precise location of the incident\n_ Your phone number\n_ Your availability hours"
+        }
+    },
+    {
+        slug: "incident_error_template_wn",
+        translations: {
+            fr: "Incident :\n_ Problème rencontré :\n_ Numéro de l'appareil :\n_ Application/logiciel concerné :\n_ Message d'erreur :\n_ Date incident :\n_ Actions réalisées :\n\nContact :\n_ Localisation :\n_ Nom et prénom :\n_ Téléphone :\n_ Disponibilité :",
+            en: "Incident :\n_ Problème rencontré :\n_ Numéro de l'appareil :\n_ Application/logiciel concerné :\n_ Message d'erreur :\n_ Date incident :\n_ Actions réalisées :\n\nContact :\n_ Localisation :\n_ Nom et prénom :\n_ Téléphone :\n_ Disponibilité :"
+        },
+        type: "wn"
+    },
+    {
         slug: "private_browsing_chrome",
         translations: {
             fr: "Pourriez-vous essayer de vous y connecter en navigation privée ?\nCliquez sur les trois points verticaux en haut à droite de votre navigateur Chrome puis \"Nouvelle fenêtre de navigation privée\".\n\nCette action a-t-elle réglé votre incident ?",
@@ -139,13 +154,6 @@ const notes = [
             en: "Could you clear your browser cache ?\n\nFor Google Chrome:\n- Click on the three vertical dots at the top right.\n- Go to History (or shortcut ctrl + H) > Delete browsing data.\n- Click on \"Advanced settings\" and in the \"Period\" selector choose \"All periods\"\n- Check only the first 4 boxes \"Browsing history\", \"Download history\", \"Cookies\", \"Cached images and files\"\n- Click on \"Delete data\"\n- Close the browser (make sure all your windows are closed)\n- Reopen the browser and try again\n\nDid the actions resolve your incident ?"
         }
     },
-    // {
-    //     slug: "page_inaccessible",
-    //     translations: {
-    //         fr: "Avez-vous pu effectuer les tests de base suivants :\n- Tester en navigation privée. Si cela fonctionne, videz entièrement votre cache de navigateur.\n- Tester sur un autre navigateur.\n- Si vous avez des collègues en télétravail ont-ils également accès (via VPN) ?\n\nSi malgré tout cela le problème persiste, pourriez-vous refaire un test et nous fournir les informations suivantes :\n- Horodotage exact du test (date et heure).\n- Votre adresse IP lors du test.\n- Le lien exact auquel vous tenté d'accéder.\nEt nous confirmer que ce test est réalisé sous VPN.\n\nMerci d'avance pour votre retour.",
-    //         en: ""
-    //     }
-    // },
     // INCIDENTS APPLICATIFS
     {
         slug: "incident_ao_system_mdw_requirements",

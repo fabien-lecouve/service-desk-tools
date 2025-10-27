@@ -10,7 +10,11 @@
   font-weight: 400;
 }
 
-h1,
+h1 {
+  font-family: "Lora", serif;
+  text-transform: uppercase;
+}
+
 h2,
 h3 {
   text-transform: capitalize;
@@ -31,16 +35,23 @@ body {
 }
 
 header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #E5E5E5;
+}
+header > div {
   display: flex;
   justify-content: space-between;
   padding: 16px;
 }
-header div {
+header > div div {
   display: flex;
   gap: 8px;
 }
 
 main {
+  margin-top: 76px;
   display: flex;
   flex-direction: column;
   gap: 4px;
@@ -73,7 +84,7 @@ main .section__notes > div > div {
 }
 
 #general {
-  background-color: #E5E5E5;
+  background-color: #BFBFBF;
 }
 
 #reminders {
@@ -143,7 +154,7 @@ button.active {
 }
 
 button.inactive {
-  background-color: #E5E5E5;
+  background-color: #F2F2F2;
 }
 
 button.copied {

@@ -1,10 +1,19 @@
-header {
-    display: flex;
-    justify-content: space-between;
-    padding: 16px;
+@use '../abstracts/variables' as *;
 
-    div {
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: $grey-light;
+
+    & > div {
         display: flex;
-        gap: 8px;
+        justify-content: space-between;
+        padding: 16px;
+        
+        div {
+            display: flex;
+            gap: 8px;
+        }
     }
 }

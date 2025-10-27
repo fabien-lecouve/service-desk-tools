@@ -2,6 +2,7 @@
 
 main {
 
+    margin-top: 76px;
     display: flex;
     flex-direction: column;
     gap: 4px;
@@ -44,7 +45,7 @@ main {
 
 
 #general {
-    background-color: $grey-light;
+    background-color: $grey;
 }
 
 #reminders {

@@ -1,0 +1,18 @@
+@use '../abstracts/variables' as *;
+
+.section {
+    background-color: var(--white-secondary);
+    padding: 16px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+    &__title {
+        text-align: center;
+        padding-bottom: 8px;
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+        gap: 16px;
+    }
+}

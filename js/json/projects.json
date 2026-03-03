@@ -1,0 +1,32 @@
+[
+    {
+        "groupId": "lacoste",
+        "groupLabel": "Lacoste",
+        "items": [
+            {
+                "id": "lacoste",
+                "label": "Lacoste",
+                "file": "lacoste.json",
+                "languages": ["fr", "en"]
+            }
+        ]
+    },
+    {
+        "groupId": "fareva - urgo",
+        "groupLabel": "Fareva - Urgo",
+        "items": [
+            {
+                "id": "fareva",
+                "label": "Fareva",
+                "file": "fareva.json",
+                "languages": ["fr", "en"]
+            },
+            {
+                "id": "urgo",
+                "label": "Urgo",
+                "file": "urgo.json",
+                "languages": ["fr", "en"]
+            }
+        ]
+    }
+]

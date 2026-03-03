@@ -1,0 +1,48 @@
+{
+    "label": "Fareva",
+    "signatures": {
+        "fr": "\nSupport Informatique Fareva\nIT Service Desk\n+33 1 23 45 67 89",
+        "en": "\nFareva IT Support\nService Desk\n+33 1 23 45 67 89"
+    },
+    "categories": {
+        "it-services": {
+            "label": "services informatiques",
+            "subcategories": {
+                "access": {
+                    "label": "accès",
+                    "buttons": [
+                        {
+                            "slug": "access_granted",
+                            "name": "accès accordé",
+                            "translations": {
+                                "fr": "Les accès demandés ont été accordés.\nVous pouvez désormais vous connecter.",
+                                "en": "The requested access has been granted.\nYou can now log in."
+                            }
+                        },
+                        {
+                            "slug": "access_validation_needed",
+                            "name": "validation requise",
+                            "translations": {
+                                "fr": "Une validation managériale est nécessaire pour poursuivre votre demande.",
+                                "en": "Manager approval is required to proceed with your request."
+                            }
+                        }
+                    ]
+                },
+                "maintenance": {
+                    "label": "maintenance",
+                    "buttons": [
+                        {
+                            "slug": "scheduled_maintenance",
+                            "name": "maintenance planifiée",
+                            "translations": {
+                                "fr": "Une opération de maintenance est prévue ce soir entre 20h et 22h.\nDes interruptions de service sont possibles.",
+                                "en": "A maintenance operation is scheduled tonight between 8 PM and 10 PM.\nService interruptions may occur."
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

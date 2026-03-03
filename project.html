@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Click and Paste</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-project">
+            <div id="header__projects" class="header-project__settings">
+            </div>
+
+            <h1>messages rapides</h1>
+
+            <div id="header__languages" class="header-project__settings">
+            </div>
+        </div>
+    </header>
+
+    <main id="quick-messages">
+        <!-- <section id="general" class="section">
+            <h2>général</h2>
+            <div class="section__notes">
+                <div id="reminders">
+                    <h3>relances</h3>
+                    <div>
+                        <button type="button" value="reminder_1">rl1</button>
+                        <button type="button" value="reminder_2">rl2</button>
+                        <button type="button" value="reminder_3">rl3</button>
+                        <button type="button" value="reminder_closure">clôture</button>
+                    </div>
+                </div>
+
+                <div id="escalations">
+                    <h3>escalades</h3>
+                    <div>
+                        <button type="button" value="escalation">escalade</button>
+                        <button type="button" value="escalation_to_be_confirmed">escalade à confirmer</button>
+                        <button type="button" value="escalation_validation">demande validation</button>
+                    </div>
+                </div>
+
+                <div id="closures">
+                    <h3>clôtures</h3>
+                    <div>
+                        <button type="button" value="closure_inc_ritm">inc >>> ritm</button>
+                        <button type="button" value="closure_ritm_inc">ritm >>> inc</button>
+                        <button type="button" value="closure_sg">services généraux</button>
+                        <button type="button" value="closure_jira">jira confluence</button>
+                    </div>
+                </div>
+
+                <div id="actions">
+                    <h3>actions</h3>
+                    <div>
+                        <button type="button" value="call">appel</button>
+                        <button type="button" value="follow">suivi</button>
+                        <button type="button" value="modification">modification</button>
+                    </div>
+                </div>
+
+                <div id="resolutions">
+                    <h3>résolutions</h3>
+                    <div>
+                        <button type="button" value="resolution_inc">incident</button>
+                        <button type="button" value="resolution_ritm">demande</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="general-incidents" class="section">
+            <h2>incidents généraux</h2>
+            <div class="section__notes">
+                <div>
+                    <h3>Template erreur</h3>
+                    <div>
+                        <button type="button" value="incident_error_template_requirements">prérequis</button>
+                        <button type="button" value="incident_error_template_wn" class="wn">work note</button>
+                    </div>
+                </div>
+
+                <div>
+                    <h3>Procédures générales</h3>
+                    <div>
+                        <button type="button" value="private_browsing_chrome">Navigation privée Chrome</button>
+                        <button type="button" value="clear_cache_chrome">Vidage cache Chrome</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="application-incidents" class="section">
+            <h2>Incidents applicatifs</h2>
+
+            <div class="section__notes">
+                <div>
+                    <h3>AO system.mdw</h3>
+                    <div>
+                        <button type="button" value="incident_ao_system_mdw_requirements">prérequis</button>
+                        <button type="button" value="incident_ao_system_mdw_wn" class="wn">work note</button>
+                        <button type="button" value="incident_ao_system_mdw_resolution">résolution</button>
+                    </div>
+                </div>
+
+                <div>
+                    <h3>Acrobat reader 64bits</h3>
+                    <div>
+                        <button type="button" value="incident_adobe_acrobat_reader_wn" class="wn">work note</button>
+                    </div>
+                </div>
+
+                <div>
+                    <h3>GTA</h3>
+                    <div>
+                        <button type="button" value="incident_gta_requirements">prérequis</button>
+                        <button type="button" value="incident_gta_wn" class="wn">work note</button>
+                        <button type="button" value="incident_gta_outgoing_email">mail sortant hris</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="general-requests" class="section">
+            <h2>demandes générales</h2>
+            <div class="section__notes">
+                <div>
+                    <h3>utiles</h3>
+                    <div>
+                        <button type="button" value="validation_manager">Validation Manager</button>
+                        <button type="button" value="application_affected">Application concernée</button>
+                        <button type="button" value="1ticket_1application">1 ticket par application</button>
+                    </div>
+                </div>
+
+                <div>
+                    <h3>ajout matricule</h3>
+                    <div>
+                        <button type="button" value="request_external_account_creation_with_registration_wn"
+                            class="wn">work note</button>
+                        <button type="button"
+                            value="request_external_account_creation_with_registration_resolution">résolution</button>
+                    </div>
+                </div>
+
+
+                <div>
+                    <h3>création compte</h3>
+                    <div>
+                        <button type="button" value="request_account_creation">Par le manager</button>
+                    </div>
+                </div>
+
+                <div>
+                    <h3>compte externe</h3>
+                    <div>
+                        <button type="button" value="request_external_account_creation">Par le desk</button>
+                    </div>
+                </div>
+
+                <div>
+                    <h3>code NIP</h3>
+                    <div>
+                        <button type="button" value="request_nip_code">résolution</button>
+                    </div>
+                </div>
+
+                <div>
+                    <h3>MDP + SSPR</h3>
+                    <div>
+
+                        <button type="button" value="request_sspr_password_resolution">résolution</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="access-requests" class="section">
+            <h2>demandes d'accès</h2>
+            <div class="section__notes">
+                <div>
+                    <h3>Access Orli</h3>
+                    <div>
+                        <button type="button" value="access_access_orli_wn" class="wn">work note</button>
+                        <button type="button" value="access_access_orli_resolution">résolution</button>
+                    </div>
+                </div>
+
+                <div>
+                    <h3>Adobe</h3>
+                    <div>
+                        <button type="button" value="access_adobe_requirements">prérequis</button>
+                        <button type="button" value="access_adobe_wn" class="wn">work note</button>
+                    </div>
+                </div>
+
+                <div>
+                    <h3>Ariba</h3>
+                    <div>
+                        <button type="button" value="access_ariba_requirements">prérequis</button>
+                        <button type="button" value="access_ariba_wn" class="wn">work note</button>
+                    </div>
+                </div>
+
+                <div>
+                    <h3>Brand Library</h3>
+                    <div>
+                        <button type="button" value="access_brand_library_requirements">prérequis</button>
+                        <button type="button" value="access_brand_library_wn" class="wn">work note</button>
+                    </div>
+                </div>
+
+                <div>
+                    <h3>Business Objects</h3>
+                    <div>
+                        <button type="button" value="access_business_objects_requirements">prérequis</button>
+                        <button type="button" value="access_business_objects_wn" class="wn">work note</button>
+                    </div>
+                </div>
+
+                <div>
+                    <h3>Centric PLM</h3>
+                    <div>
+                        <button type="button" value="access_centric_plm_requirements">prérequis</button>
+                        <button type="button" value="access_centric_plm_wn" class="wn">work note</button>
+                    </div>
+                </div>
+
+                <div>
+                    <h3>Dossier partagé</h3>
+                    <div>
+                        <button type="button" value="access_shared_folder_requirements">prérequis</button>
+                        <button type="button" value="access_shared_folder_wn" class="wn">work note</button>
+                    </div>
+                </div>
+
+                <div>
+                    <h3>Liste de distribution</h3>
+                    <div>
+                        <button type="button" value="access_distribution_list_requirements">prérequis</button>
+                        <button type="button" value="access_distribution_list_wn" class="wn">work note</button>
+                    </div>
+                </div>
+
+                <div>
+                    <h3>Miro</h3>
+                    <div>
+                        <button type="button" value="access_miro_requirements">prérequis</button>
+                        <button type="button" value="access_miro_wn" class="wn">work note</button>
+                    </div>
+                </div>
+
+                <div>
+                    <h3>Orliweb</h3>
+                    <div>
+                        <button type="button" value="access_orliweb_requirements">prérequis</button>
+                        <button type="button" value="access_orliweb_wn" class="wn">work note</button>
+                    </div>
+                </div>
+
+                <div>
+                    <h3>Qliksense</h3>
+                    <div>
+                        <button type="button" value="access_qliksense_requirements">prérequis</button>
+                        <button type="button" value="access_qliksense_wn" class="wn">work note</button>
+                        <button type="button" value="access_qliksense_validation">demande validation</button>
+                    </div>
+                </div>
+
+                <div>
+                    <h3>Rosario</h3>
+                    <div>
+                        <button type="button" value="access_rosario_requirements">prérequis</button>
+                        <button type="button" value="access_rosario_wn" class="wn">work note</button>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+    </main>
+
+    <script type="module" src="js/pages/project.js"></script>
+</body>
+
+</html>

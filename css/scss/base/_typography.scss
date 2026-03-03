@@ -1,24 +1,13 @@
+@use '../abstracts/variables' as *;
+
 * {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Inter", sans-serif;
     font-weight: 400;
-}
-
-h1 {
-    font-family: "Lora", serif;
-    text-transform: uppercase;
-}
-
-h2,
-h3 {
     text-transform: capitalize;
+    color: var(--black-primary);
 }
 
-h2 {
-    text-align: center;
-    padding: 8px 0px;
-}
-
-h3 {
-    text-align: center;
-    padding-bottom: 8px;
+h1,h2,h3 {
+    font-family: "Montserrat", sans-serif;
+    color: var(--black-primary);
 }

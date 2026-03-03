@@ -2,50 +2,83 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  color: #4D4D4D;
 }
 
 * {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
-}
-
-h1 {
-  font-family: "Lora", serif;
-  text-transform: uppercase;
-}
-
-h2,
-h3 {
   text-transform: capitalize;
+  color: var(--black-primary);
 }
 
-h2 {
-  text-align: center;
-  padding: 8px 0px;
+h1, h2, h3 {
+  font-family: "Montserrat", sans-serif;
+  color: var(--black-primary);
 }
 
-h3 {
-  text-align: center;
-  padding-bottom: 8px;
+.accent-yellow {
+  border-top: 4px solid yellow;
+}
+
+.accent-orange {
+  border-top: 4px solid orange;
+}
+
+.accent-red {
+  border-top: 4px solid red;
+}
+
+.accent-blue {
+  border-top: 4px solid blue;
+}
+
+.accent-green {
+  border-top: 4px solid green;
+}
+
+.action-yellow {
+  background-color: yellow;
+  color: #FFFFFF;
+}
+
+.action-orange {
+  background-color: orange;
+  color: #FFFFFF;
+}
+
+.action-red {
+  background-color: red;
+  color: #FFFFFF;
+}
+
+.action-blue {
+  background-color: blue;
+  color: #FFFFFF;
+}
+
+.action-green {
+  background-color: green;
+  color: #FFFFFF;
 }
 
 body {
-  background-color: #F2F2F2;
+  background-color: var(--white-primary);
 }
 
 header {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #E5E5E5;
-}
-header > div {
-  display: flex;
-  justify-content: space-between;
+  background-color: #FFFFFF;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   padding: 16px;
 }
-header > div div {
+
+.header-project {
+  display: flex;
+  justify-content: space-between;
+}
+.header-project__settings {
   display: flex;
   gap: 8px;
 }
@@ -54,113 +87,63 @@ main {
   margin-top: 76px;
   display: flex;
   flex-direction: column;
-  gap: 4px;
-}
-main .section {
-  border-radius: 8px;
-}
-main .section__notes {
-  padding: 8px;
   gap: 8px;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
 }
-main .section__notes > div {
+
+.section {
+  background-color: var(--white-secondary);
+  padding: 16px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.section__title {
+  text-align: center;
+  padding-bottom: 8px;
+}
+.section__content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  background-color: var(--white-primary);
   padding: 8px;
-  border: 1px solid #4D4D4D;
   border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-main .section__notes > div > div {
-  gap: 8px;
+.card__title {
+  text-align: center;
+  padding-bottom: 8px;
+}
+.card__content {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-@media (min-width: 769px) {
-  main .section__notes > div > div {
-    flex-direction: row;
-  }
-}
-
-#general {
-  background-color: #BFBFBF;
-}
-
-#reminders {
-  background-color: #F6D365;
-}
-
-#escalations {
-  background-color: #F8B878;
-}
-
-#closures {
-  background-color: #F28B82;
-}
-
-#actions {
-  background-color: #7DBEF0;
-}
-
-#resolutions {
-  background-color: #7DDFA1;
-}
-
-#general-incidents {
-  background-color: #F8B6AE;
-}
-#general-incidents > div > div {
-  background-color: #FDE9E8;
-}
-
-#application-incidents {
-  background-color: #F28B82;
-}
-#application-incidents > div > div {
-  background-color: #FDE9E8;
-}
-
-#general-requests {
-  background-color: #B1D8F7;
-}
-#general-requests > div > div {
-  background-color: #E6F3FC;
-}
-
-#access-requests {
-  background-color: #7DBEF0;
-}
-#access-requests > div > div {
-  background-color: #E6F3FC;
-}
-
-.wn {
-  background-color: #F8B878;
+  gap: 8px;
 }
 
 button {
+  background-color: #FFFFFF;
   padding: 8px;
-  background-color: #F2F2F2;
-  border: 1px solid #4D4D4D;
   border-radius: 8px;
+  border: none;
   cursor: pointer;
-  text-transform: uppercase;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 button.active {
-  background-color: #3398E2;
-  color: #F2F2F2;
+  background-color: #4F8FD9;
+  color: #FFFFFF;
 }
 
 button.inactive {
-  background-color: #F2F2F2;
+  background-color: #F7F8FA;
 }
 
 button.copied {
   outline: none;
-  box-shadow: 0 0 8px 8px #F2F2F2;
-  transition: box-shadow 0.2s ease;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  transition: box-shadow 0.1s ease;
 }
 
 /*# sourceMappingURL=style.css.map */

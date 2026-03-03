@@ -4,16 +4,17 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: $grey-light;
+    background-color: $white-secondary;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 16px;
+}
 
-    & > div {
+.header-project {
+    display: flex;
+    justify-content: space-between;
+
+    &__settings {
         display: flex;
-        justify-content: space-between;
-        padding: 16px;
-        
-        div {
-            display: flex;
-            gap: 8px;
-        }
+        gap: 8px;
     }
 }

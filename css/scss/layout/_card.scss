@@ -1,0 +1,22 @@
+@use '../abstracts/variables' as *;
+
+.card {
+    background-color: var(--white-primary);
+    padding: 8px;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+    &__title {
+        text-align: center;
+        padding-bottom: 8px;
+    }
+    
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 8px;
+    }
+}
+
+ 

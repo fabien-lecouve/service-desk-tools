@@ -274,6 +274,19 @@
                         }
                     ]
                 },
+                "cx-platform": {
+                    "label": "CX Platform",
+                    "buttons": [
+                        {
+                            "slug": "incident_cx_platform_resolution",
+                            "name": "résolution",
+                            "translations": {
+                                "fr": "Nous ne gérons pas les accès à CX Platform. Veuillez-vous rapprocher de cxplatform_admin@lacoste.com.\n\nVeuillez également tester en navigation privée et/ou en vidant le cache du navigateur, cela peut aider à résoudre l'incident.\n\nNous procédons à la clôture du ticket. Nous restons bien sûr à votre disposition pour toute assistance supplémentaire.",
+                                "en": "We do not manage access to CX Platform. Please contact cxplatform_admin@lacoste.com.\n\nPlease also try in private browsing and/or by clearing your browser cache, this may help resolve the issue.\n\nWe are proceeding to close the ticket. We remain of course at your disposal for any further assistance."
+                            }
+                        }
+                    ]
+                },
                 "gta": {
                     "label": "GTA",
                     "buttons": [
@@ -542,23 +555,36 @@
                         }
                     ]
                 },
-                "centric-plm": {
-                    "label": "Centric PLM",
+                "centric-plm-internal": {
+                    "label": "Centric PLM Interne",
                     "buttons": [
                         {
-                            "slug": "access_centric_plm_requirements",
+                            "slug": "access_centric_plm_internal_requirements",
                             "name": "prérequis",
                             "translations": {
-                                "fr": "Afin de procéder à l'attribution des accès Centric PLM, merci de nous fournir :\n\n- La validation de votre manager\n- Un compte de référence\n\nVous pouvez nous transmettre cette validation :\n- Par mail à l'adresse suivante : support@lacoste.com\n- Ou par un message directement dans ce ticket\n\nNous restons à votre disposition pour toute information complémentaire.",
-                                "en": "To proceed with the allocation of Centric PLM access, please provide us with :\n- Validation from your manager\n- A reference account\n\nYou can send us this validation :\n- By email to the following address : support@lacoste.com\n- Or by sending a message directly to this ticket\n\nWe remain at your disposal for any additional information."
+                                "fr": "Afin de procéder à l'attribution des accès Centric PLM, merci de nous fournir la validation de votre manager.\n\nVous pouvez nous transmettre cette validation :\n- Par mail à l'adresse suivante : support@lacoste.com\n- Ou par un message directement dans ce ticket",
+                                "en": "To grant Centric PLM access, please provide us with your manager's approval.\n\nYou can send us this approval:\n- By email to the following address: support@lacoste.com\n- Or by sending a message directly to this ticket."
                             }
                         },
                         {
-                            "slug": "access_centric_plm_wn",
+                            "slug": "access_centric_plm_internal_wn",
                             "name": "work note",
                             "type": "wn",
                             "translations": {
-                                "fr": "Suivi KB0010791"
+                                "fr": "Suivi [code]<a title=\"[PLM] - Internal access creation\" href='kb_view.do?sys_kb_id=a420baf02b8dfa10be66f3eff891bfbb' >KB0010791 : [PLM] - Internal access creation</a>[/code]\n\nUtilisateur a bien utilisé le bon formulaire\n\nAjout droits :\n_ APP_Centric_PLMC_7.8.2.1005_Illustrator_Deployment\n_ GRP_AZU_USR_PLM_PRD_ARCHIVE-G\n_ USERS_PLM-U\n\n\n\nBonjour,\n\nPourriez-vous prendre en charge ce ticket s'il vous plaît ?\n\nCordialement,"
+                            }
+                        }
+                    ]
+                },
+                "centric-plm-vendor": {
+                    "label": "Centric PLM Vendeur",
+                    "buttons": [
+                        {
+                            "slug": "access_centric_plm_vendor_wn",
+                            "name": "work note",
+                            "type": "wn",
+                            "translations": {
+                                "fr": "Suivi [code]<a title=\"[PLM] - Vendor access creation\" href='kb_view.do?sys_kb_id=43504cf42b69b69454d2f648f291bff2' >KB0022472 : [PLM] - Vendor access creation</a>[/code]\n\nTicket ouvert par les personnes autorisées : OK\n\nModification fichier B:\\Support\\AccountsCreation\\PLM-Logility\\AccountsCreationPLM-Logility.csv\n\nAjout de : FirstName;LastName;email;Platform;Company;Application\n\nScript AccountsCreationPLM-Logility.ps1 lancé\n\n\n\nBonjour,\n\nPourriez-vous prendre en charge ce ticket s'il vous plaît ?\n\nCordialement,\n"
                             }
                         }
                     ]

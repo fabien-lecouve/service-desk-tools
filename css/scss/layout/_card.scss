@@ -4,19 +4,24 @@
     background-color: var(--white-primary);
     padding: 8px;
     border-radius: 8px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    min-width: 0;
 
     &__title {
         text-align: center;
         padding-bottom: 8px;
     }
     
-    &__content {
+        &__content {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        align-items: stretch;
         justify-content: center;
         gap: 8px;
     }
 }
 
+.card-wide {
+    grid-column: span 2;
+}
  

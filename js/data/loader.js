@@ -24,8 +24,18 @@ function buildSlugIndex(project) {
 
         if (category.subcategories) {
             for (const subcategory of Object.values(category.subcategories)) {
-                for (const button of subcategory.buttons) {
-                    index[button.slug] = button;
+
+                if (subcategory.group) {
+                    subcategory.group.forEach(group => {
+                        for (const button of group.buttons) {
+                            index[button.slug] = button;
+                        }
+                    });
+                }
+                if (subcategory.buttons) {
+                    for (const button of subcategory.buttons) {
+                        index[button.slug] = button;
+                    }
                 }
             }
         }

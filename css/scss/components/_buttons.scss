@@ -1,12 +1,39 @@
 @use '../abstracts/variables' as *;
 
+.group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 1;
+    gap: 8px;
+    padding: 8px;
+    border-radius: 8px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+    &__title {
+        padding-bottom: 8px;
+    }
+
+    &__content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 8px;
+    }
+}
+
+
 button {
+    width: 100%;
     background-color: $white-secondary;
     padding: 8px;
     border-radius: 8px;
     border: none;
     cursor: pointer;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 button.active {

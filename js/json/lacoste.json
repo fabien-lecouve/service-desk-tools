@@ -23,8 +23,8 @@
                     "name": "appel",
                     "action": "blue",
                     "translations": {
-                        "fr": "Pourriez-vous nous rappeler au +33 1 44 58 12 99 afin que nous puissions traiter votre ticket ?",
-                        "en": "Could you please call us back at +33 1 44 58 12 99 so we can process your ticket ?"
+                        "fr": "Pourriez-vous nous rappeler au +33 1 44 58 12 99 afin que nous puissions traiter votre ticket ?\nNous sommes disponible du lundi au vendredi de 7h à 20h.",
+                        "en": "Could you please call us back at +33 1 44 58 12 99 so we can process your ticket ?\nWe are available Monday to Friday from 7am to 8pm."
                     }
                 },
                 {
@@ -95,7 +95,7 @@
                         },
                         {
                             "slug": "escalation_validation",
-                            "name": "demande validation",
+                            "name": "validation",
                             "type": "esc",
                             "translations": {
                                 "fr": "Validez-vous cette demande ?",
@@ -137,14 +137,6 @@
                                 "fr": "L'incident est-il toujours d'actualité ? Si tel est le cas, pouvez-vous nous recontacter par téléphone au +33 1 44 58 12 99 ?",
                                 "en": "Is the incident still ongoing? If so, could you please contact us again by phone at +33 1 44 58 12 99 ?"
                             }
-                        },
-                        {
-                            "slug": "modification",
-                            "name": "modification",
-                            "translations": {
-                                "fr": "Des modifications ont été apportées sur votre compte.\nPourriez-vous réessayer et nous faire un retour ?",
-                                "en": "Changes have been made to your account.\nCould you try again and give us feedback ?"
-                            }
                         }
                     ]
                 }
@@ -152,6 +144,7 @@
         },
         "general-incidents": {
             "label": "incidents généraux",
+            "accent": "red",
             "subcategories": {
                 "finalisation": {
                     "label": "Finalisation",
@@ -230,34 +223,55 @@
         },
         "application-incidents": {
             "label": "Incidents applicatifs",
+            "accent": "red",
             "subcategories": {
-                "ao-system-mdw": {
-                    "label": "AO system.mdw",
-                    "buttons": [
+                "access-orli": {
+                    "label": "Access Orli",
+                    "group": [
                         {
-                            "slug": "incident_ao_system_mdw_requirements",
-                            "name": "prérequis",
-                            "translations": {
-                                "fr": "Pouvez vous nous transmettre votre numéro de PC commençant par fr ?\n\nVous pouvez le trouver soit sur votre bureau en haut à droite, soit en ouvrant les paramètres du poste et en allant dans \"Système\".",
-                                "en": "Can you please send us your PC number beginning with fr ?\n\nYou can find it either on your desktop in the top right corner, or by opening your computer's settings and going to \"System\"."
-                            }
+                            "id": "incident_access-orli-general",
+                            "label": "Général",
+                            "buttons": [
+                                {
+                                    "slug": "access_access_orli_resolution",
+                                    "name": "résolution",
+                                    "translations": {
+                                        "fr": "Afin de résoudre cet incident, veuillez suivre les étapes suivantes :\n1. Ouvrir le dossier sur le bureau : \"Applications Lacoste\"\n2. Ouvrir le fichier : \"Nouvelle version access orli\"\n3. Une fenêtre s'ouvre et lance l'installation ; attendre la fin de l'installation et refermer la fenêtre\n3. Ouvrir Access Orli (une icône a été créé sur votre bureau)\n\nCes instructions vous ont-elles aidé à résoudre cet incident ?",
+                                        "en": "To solve this incident, please follow these steps:\n1. Open the folder on the desktop: \"Lacoste Applications\"\n2. Open the file: \"New version access orli\"\n3. A window opens and starts the installation; wait for the installation to complete and close the window 3. Open Access Orli (an icon has been created on your desktop).\n\nDid these instructions help you resolve this incident ?"
+                                    }
+                                }
+                            ]
                         },
                         {
-                            "slug": "incident_ao_system_mdw_wn",
-                            "name": "work note",
-                            "type": "wn",
-                            "translations": {
-                                "fr": "Copie du fichier system.mdw de \\\\inffilprdstb1\\Distrib\\Soft\\AccesOrli DLL vers C:\\rtacc2000\\Office\n\nOU\n\nCopie du fichier system.mdw de \\\\inffilprdstb1\\Distrib\\Soft\\AccesOrli DLL vers \\\\FRLPFH5J094\\c$\\rtacc2000\\Office",
-                                "en": "Copie du fichier system.mdw de \\\\inffilprdstb1\\Distrib\\Soft\\AccesOrli DLL vers C:\\rtacc2000\\Office\n\nOU\n\nCopie du fichier system.mdw de \\\\inffilprdstb1\\Distrib\\Soft\\AccesOrli DLL vers \\\\FRLPFH5J094\\c$\\rtacc2000\\Office"
-                            }
-                        },
-                        {
-                            "slug": "incident_ao_system_mdw_resolution",
-                            "name": "résolution",
-                            "translations": {
-                                "fr": "Merci pour votre retour.\nLe fichier manquant a bien été ajouté à votre poste.\n\nIl ne vous reste plus qu'à vous rendre sur votre bureau, dans le dossier \"Applications Lacoste\" et à exécuter \"Nouvelle version Access Orli\".\nUne fois cette tâche terminée vous pouvez relancer Access Orli et tout devrait être fonctionnel.\nN'hésitez pas à revenir vers nous si ce n'est pas le cas.",
-                                "en": "Thank you for your feedback.\nThe missing file has been added to your computer.\n\nAll you have to do now is go to your desktop, to the \"Lacoste Applications\" folder, and run \"New Access Orli Version.\"\nOnce this task is complete, you can restart Access Orli, and everything should be working properly.\nPlease don't hesitate to get back to us if this is not the case."
-                            }
+                            "id": "incident_access-orli-system-mdw",
+                            "label": "System.mdw",
+                            "buttons": [
+                                {
+                                    "slug": "incident_ao_system_mdw_requirements",
+                                    "name": "prérequis",
+                                    "translations": {
+                                        "fr": "Pouvez vous nous transmettre votre numéro de PC commençant par fr ?\n\nVous pouvez le trouver soit sur votre bureau en haut à droite, soit en ouvrant les paramètres du poste et en allant dans \"Système\".",
+                                        "en": "Can you please send us your PC number beginning with fr ?\n\nYou can find it either on your desktop in the top right corner, or by opening your computer's settings and going to \"System\"."
+                                    }
+                                },
+                                {
+                                    "slug": "incident_ao_system_mdw_wn",
+                                    "name": "work note",
+                                    "type": "wn",
+                                    "translations": {
+                                        "fr": "Copie du fichier system.mdw de \\\\inffilprdstb1\\Distrib\\Soft\\AccesOrli DLL vers C:\\rtacc2000\\Office\n\nOU\n\nCopie du fichier system.mdw de \\\\inffilprdstb1\\Distrib\\Soft\\AccesOrli DLL vers \\\\FRLPFH5J094\\c$\\rtacc2000\\Office",
+                                        "en": "Copie du fichier system.mdw de \\\\inffilprdstb1\\Distrib\\Soft\\AccesOrli DLL vers C:\\rtacc2000\\Office\n\nOU\n\nCopie du fichier system.mdw de \\\\inffilprdstb1\\Distrib\\Soft\\AccesOrli DLL vers \\\\FRLPFH5J094\\c$\\rtacc2000\\Office"
+                                    }
+                                },
+                                {
+                                    "slug": "incident_ao_system_mdw_resolution",
+                                    "name": "résolution",
+                                    "translations": {
+                                        "fr": "Merci pour votre retour.\nLe fichier manquant a bien été ajouté à votre poste.\n\nIl ne vous reste plus qu'à vous rendre sur votre bureau, dans le dossier \"Applications Lacoste\" et à exécuter \"Nouvelle version Access Orli\".\nUne fois cette tâche terminée vous pouvez relancer Access Orli et tout devrait être fonctionnel.\nN'hésitez pas à revenir vers nous si ce n'est pas le cas.",
+                                        "en": "Thank you for your feedback.\nThe missing file has been added to your computer.\n\nAll you have to do now is go to your desktop, to the \"Lacoste Applications\" folder, and run \"New Access Orli Version.\"\nOnce this task is complete, you can restart Access Orli, and everything should be working properly.\nPlease don't hesitate to get back to us if this is not the case."
+                                    }
+                                }
+                            ]
                         }
                     ]
                 },
@@ -320,6 +334,7 @@
         },
         "general-requests": {
             "label": "demandes générales",
+            "accent": "blue",
             "subcategories": {
                 "finalisation": {
                     "label": "Finalisation",
@@ -395,23 +410,35 @@
                     ]
                 },
                 "account-creation": {
-                    "label": "création compte externe",
-                    "buttons": [
+                    "label": "Création compte",
+                    "group": [
                         {
-                            "slug": "request_external_account_creation_by_manager",
-                            "name": "Par le manager",
-                            "translations": {
-                                "fr": "Veuillez remplir le formulaire ci-dessous pour la création du compte.\n\nSelon le statut du collaborateur veuillez suivre le lien :\n\n- Externe - https://iam.lacoste.com/identityiq/login.jsf\n- Interne - Création auprès des RH (dans le système de paie, qui déclenchera la création automatique sous 24h du compte informatique)\n- Interne (Gayettes / Solodi / Court 2.3 / Boutique)  https://lacoste.service-now.com/sp?id=sc_cat_item&sys_id=56aaf659db36a410b866de0cd3961969&sysparm_category=d9a642d11b423740d20da64fad4bcbd3",
-                                "en": "Please fill out the form below to create the account.\n\nDepending on the employee's status, please follow the link:\n\n- External - https://iam.lacoste.com/identityiq/login.jsf\n- Internal - Creation with HR (in the payroll system, which will trigger the automatic creation of the IT account within 24 hours)\n- Internal (Gayettes / Solodi / Court 2.3 / Boutique) https://lacoste.service-now.com/sp?id=sc_cat_item&sys_id=56aaf659db36a410b866de0cd3961969&sysparm_category=d9a642d11b423740d20da64fad4bcbd3"
-                            }
+                            "id": "account-creation-informations",
+                            "label": "Informations",
+                            "buttons": [
+                                {
+                                    "slug": "request_account_creation_informations",
+                                    "name": "Résolution",
+                                    "translations": {
+                                        "fr": "Veuillez remplir le formulaire ci-dessous pour la création du compte.\n\nSelon le statut du collaborateur veuillez suivre le lien :\n\n- Externe - https://iam.lacoste.com/identityiq/login.jsf\n- Interne - Création auprès des RH (dans le système de paie, qui déclenchera la création automatique sous 24h du compte informatique)\n- Interne (Gayettes / Solodi / Court 2.3 / Boutique)  https://lacoste.service-now.com/sp?id=sc_cat_item&sys_id=56aaf659db36a410b866de0cd3961969&sysparm_category=d9a642d11b423740d20da64fad4bcbd3",
+                                        "en": "Please fill out the form below to create the account.\n\nDepending on the employee's status, please follow the link:\n\n- External - https://iam.lacoste.com/identityiq/login.jsf\n- Internal - Creation with HR (in the payroll system, which will trigger the automatic creation of the IT account within 24 hours)\n- Internal (Gayettes / Solodi / Court 2.3 / Boutique) https://lacoste.service-now.com/sp?id=sc_cat_item&sys_id=56aaf659db36a410b866de0cd3961969&sysparm_category=d9a642d11b423740d20da64fad4bcbd3"
+                                    }
+                                }
+                            ]
                         },
                         {
-                            "slug": "request_external_account_creation_by_desk",
-                            "name": "Par le desk",
-                            "translations": {
-                                "fr": "Afin de créer un compte externe pour votre collaborateur, nous aurions besoin des informations suivantes :\nIdentité de l'utilisateur :\n_ Nom\n_ Prénom\n_ Type employé (Externe, Intérimaire, Stagiaire non rémunéré)\n_ Email du prestataire\n\nContrat :\n_ Début de mission\n_ Fin de mission\n_ Nom de l'entreprise prestataire\n_ Intitulé du poste\n\nApplications :\nAura t'il besoin de :\n_ badge\n_ Messagerie Lacoste\n_ VPN-WIFI (indispensable si vous commandez un PC)\n\nOrganisation :\n_ Responsable\n_ Société (lacoste France, lacoste Canada, etc.)\n_ Site (Court37, Court 2.3, etc.)",
-                                "en": "In order to create an external account for your employee, we would need the following information:\nUser identity :\nLast name\nFirst name\nEmployee type (External, Temporary, Unpaid intern)\nService provider email\n\nContract :\nStart of mission\nEnd of mission\nName of the service provider company\nJob title\n\nApplications :\nWill they need :\nBadge\nLacoste messaging\nVPN-WIFI (essential if you order a PC)\n\nOrganization :\nManager\nCompany (Lacoste France, Lacoste Canada, etc.)\nSite (Court37, Court 2.3, etc.)"
-                            }
+                            "id": "account-creation-external",
+                            "label": "Externe",
+                            "buttons": [
+                                {
+                                    "slug": "request_account_creation_for_external_by_desk",
+                                    "name": "Prérequis",
+                                    "translations": {
+                                        "fr": "Afin de créer un compte externe pour votre collaborateur, nous aurions besoin des informations suivantes :\nIdentité de l'utilisateur :\n_ Nom\n_ Prénom\n_ Type employé (Externe, Intérimaire, Stagiaire non rémunéré)\n_ Email du prestataire\n\nContrat :\n_ Début de mission\n_ Fin de mission\n_ Nom de l'entreprise prestataire\n_ Intitulé du poste\n\nApplications :\nAura t'il besoin de :\n_ badge\n_ Messagerie Lacoste\n_ VPN-WIFI (indispensable si vous commandez un PC)\n\nOrganisation :\n_ Responsable\n_ Société (lacoste France, lacoste Canada, etc.)\n_ Site (Court37, Court 2.3, etc.)",
+                                        "en": "In order to create an external account for your employee, we would need the following information:\nUser identity :\nLast name\nFirst name\nEmployee type (External, Temporary, Unpaid intern)\nService provider email\n\nContract :\nStart of mission\nEnd of mission\nName of the service provider company\nJob title\n\nApplications :\nWill they need :\nBadge\nLacoste messaging\nVPN-WIFI (essential if you order a PC)\n\nOrganization :\nManager\nCompany (Lacoste France, Lacoste Canada, etc.)\nSite (Court37, Court 2.3, etc.)"
+                                    }
+                                }
+                            ]
                         }
                     ]
                 },
@@ -445,6 +472,7 @@
         },
         "access-requests": {
             "label": "demandes d'accès",
+            "accent": "blue",
             "subcategories": {
                 "access-orli": {
                     "label": "Access Orli",
@@ -555,37 +583,44 @@
                         }
                     ]
                 },
-                "centric-plm-internal": {
-                    "label": "Centric PLM Interne",
-                    "buttons": [
+                "centric-plm": {
+                    "label": "Centric PLM",
+                    "group": [
                         {
-                            "slug": "access_centric_plm_internal_requirements",
-                            "name": "prérequis",
-                            "translations": {
-                                "fr": "Afin de procéder à l'attribution des accès Centric PLM, merci de nous fournir la validation de votre manager.\n\nVous pouvez nous transmettre cette validation :\n- Par mail à l'adresse suivante : support@lacoste.com\n- Ou par un message directement dans ce ticket",
-                                "en": "To grant Centric PLM access, please provide us with your manager's approval.\n\nYou can send us this approval:\n- By email to the following address: support@lacoste.com\n- Or by sending a message directly to this ticket."
-                            }
+                            "id": "centric-plm-internal",
+                            "label": "Interne",
+                            "buttons": [
+                                {
+                                    "slug": "access_centric_plm_internal_requirements",
+                                    "name": "prérequis",
+                                    "translations": {
+                                        "fr": "Afin de procéder à l'attribution des accès Centric PLM, merci de nous fournir la validation de votre manager.\n\nVous pouvez nous transmettre cette validation :\n- Par mail à l'adresse suivante : support@lacoste.com\n- Ou par un message directement dans ce ticket",
+                                        "en": "To grant Centric PLM access, please provide us with your manager's approval.\n\nYou can send us this approval:\n- By email to the following address: support@lacoste.com\n- Or by sending a message directly to this ticket."
+                                    }
+                                },
+                                {
+                                    "slug": "access_centric_plm_internal_wn",
+                                    "name": "work note",
+                                    "type": "wn",
+                                    "translations": {
+                                        "fr": "Suivi [code]<a title=\"[PLM] - Internal access creation\" href='kb_view.do?sys_kb_id=a420baf02b8dfa10be66f3eff891bfbb' >KB0010791 : [PLM] - Internal access creation</a>[/code]\n\nUtilisateur a bien utilisé le bon formulaire\n\nAjout droits :\n_ APP_Centric_PLMC_7.8.2.1005_Illustrator_Deployment\n_ GRP_AZU_USR_PLM_PRD_ARCHIVE-G\n_ USERS_PLM-U\n\n\n\nBonjour,\n\nPourriez-vous prendre en charge ce ticket s'il vous plaît ?\n\nCordialement,"
+                                    }
+                                }
+                            ]
                         },
                         {
-                            "slug": "access_centric_plm_internal_wn",
-                            "name": "work note",
-                            "type": "wn",
-                            "translations": {
-                                "fr": "Suivi [code]<a title=\"[PLM] - Internal access creation\" href='kb_view.do?sys_kb_id=a420baf02b8dfa10be66f3eff891bfbb' >KB0010791 : [PLM] - Internal access creation</a>[/code]\n\nUtilisateur a bien utilisé le bon formulaire\n\nAjout droits :\n_ APP_Centric_PLMC_7.8.2.1005_Illustrator_Deployment\n_ GRP_AZU_USR_PLM_PRD_ARCHIVE-G\n_ USERS_PLM-U\n\n\n\nBonjour,\n\nPourriez-vous prendre en charge ce ticket s'il vous plaît ?\n\nCordialement,"
-                            }
-                        }
-                    ]
-                },
-                "centric-plm-vendor": {
-                    "label": "Centric PLM Vendeur",
-                    "buttons": [
-                        {
-                            "slug": "access_centric_plm_vendor_wn",
-                            "name": "work note",
-                            "type": "wn",
-                            "translations": {
-                                "fr": "Suivi [code]<a title=\"[PLM] - Vendor access creation\" href='kb_view.do?sys_kb_id=43504cf42b69b69454d2f648f291bff2' >KB0022472 : [PLM] - Vendor access creation</a>[/code]\n\nTicket ouvert par les personnes autorisées : OK\n\nModification fichier B:\\Support\\AccountsCreation\\PLM-Logility\\AccountsCreationPLM-Logility.csv\n\nAjout de : FirstName;LastName;email;Platform;Company;Application\n\nScript AccountsCreationPLM-Logility.ps1 lancé\n\n\n\nBonjour,\n\nPourriez-vous prendre en charge ce ticket s'il vous plaît ?\n\nCordialement,\n"
-                            }
+                            "id": "centric-plm-vendor",
+                            "label": "Vendeur",
+                            "buttons": [
+                                {
+                                    "slug": "access_centric_plm_vendor_wn",
+                                    "name": "work note",
+                                    "type": "wn",
+                                    "translations": {
+                                        "fr": "Suivi [code]<a title=\"[PLM] - Vendor access creation\" href='kb_view.do?sys_kb_id=43504cf42b69b69454d2f648f291bff2' >KB0022472 : [PLM] - Vendor access creation</a>[/code]\n\nTicket ouvert par les personnes autorisées : OK\n\nModification fichier B:\\Support\\AccountsCreation\\PLM-Logility\\AccountsCreationPLM-Logility.csv\n\nAjout de : FirstName;LastName;email;Platform;Company;Application\n\nScript AccountsCreationPLM-Logility.ps1 lancé\n\n\n\nBonjour,\n\nPourriez-vous prendre en charge ce ticket s'il vous plaît ?\n\nCordialement,\n"
+                                    }
+                                }
+                            ]
                         }
                     ]
                 },

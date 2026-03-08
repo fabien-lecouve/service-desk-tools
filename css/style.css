@@ -11,9 +11,10 @@
   color: var(--black-primary);
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   font-family: "Montserrat", sans-serif;
   color: var(--black-primary);
+  text-transform: uppercase;
 }
 
 .accent-yellow {
@@ -93,7 +94,7 @@ main {
 .section {
   background-color: var(--white-secondary);
   padding: 16px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 .section__title {
   text-align: center;
@@ -101,7 +102,7 @@ main {
 }
 .section__content {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   gap: 16px;
 }
 
@@ -109,7 +110,8 @@ main {
   background-color: var(--white-primary);
   padding: 8px;
   border-radius: 8px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  min-width: 0;
 }
 .card__title {
   text-align: center;
@@ -117,18 +119,47 @@ main {
 }
 .card__content {
   display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: center;
+  gap: 8px;
+}
+
+.card-wide {
+  grid-column: span 2;
+}
+
+.group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex: 1;
+  gap: 8px;
+  padding: 8px;
+  border-radius: 8px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.group__title {
+  padding-bottom: 8px;
+}
+.group__content {
+  width: 100%;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 8px;
 }
 
 button {
+  width: 100%;
   background-color: #FFFFFF;
   padding: 8px;
   border-radius: 8px;
   border: none;
   cursor: pointer;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 button.active {

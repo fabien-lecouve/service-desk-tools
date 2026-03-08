@@ -14,42 +14,73 @@ export function buildMessagesButtons() {
     for (const [categoryId, category] of Object.entries(project.categories)) {
 
         const section = element("section", { id: categoryId, class: "section" });
-        const h2 = element("h2", { class: "section__title" }, category.label);
-        const div1 = element("div", { class: "section__content" });
+        const categoryTitle = element("h2", { class: "section__title" }, category.label);
+        const categoryContent = element("div", { class: "section__content" });
 
         if (category.buttons) {
             category.buttons.forEach(button => {
 
                 const btn = createButton(button);
 
-                div1.append(btn);
+                categoryContent.append(btn);
             });
+        }
+
+        if (category.accent) {
+            section.classList.add(`accent-${category.accent}`);
         }
 
         if (category.subcategories) {
             for (const [subId, sub] of Object.entries(category.subcategories)) {
 
-                const div2 = element("div", { id: subId, class: "card" });
+                const subcategoryContent = element("div", { id: subId, class: "card" });
 
                 if (sub.accent) {
-                    div2.classList.add(`accent-${sub.accent}`);
+                    subcategoryContent.classList.add(`accent-${sub.accent}`);
                 }
 
-                const h3 = element("h3", { class: "card__title" }, sub.label);
-                const div3 = element("div", { class: "card__content" });
+                const subcategoryTitle = element("h3", { class: "card__title" }, sub.label);
+                const cardContent = element("div", { class: "card__content" });
 
-                sub.buttons.forEach(button => {
-                    const btn = createButton(button)
+                if (sub.group) {
+                    subcategoryContent.classList.add("card-wide");
 
-                    div3.append(btn);
-                });
+                    sub.group.forEach(group => {
 
-                div2.append(h3, div3);
-                div1.append(div2);
+                        const groupContainer = element("div", { class: "group" });
+                        const groupTitle = element("h4", { class: "group__title" }, group.label);
+                        const groupContent = element("div", { class: "group__content" });
+
+                        group.buttons.forEach(button => {
+                            const btn = createButton(button)
+
+                            groupContent.append(btn);
+                        });
+
+                        groupContainer.append(groupTitle, groupContent);
+                        cardContent.append(groupContainer)
+                    });
+                }
+
+                if (sub.buttons) {
+
+                    const groupContent = element("div", { class: "group__content" });
+
+                    sub.buttons.forEach(button => {
+                        const btn = createButton(button)
+
+                        groupContent.append(btn);
+                    });
+                    cardContent.append(groupContent);
+                }
+
+
+                subcategoryContent.append(subcategoryTitle, cardContent);
+                categoryContent.append(subcategoryContent);
             }
         }
 
-        section.append(h2, div1);
+        section.append(categoryTitle, categoryContent);
         main.append(section);
     }
 }

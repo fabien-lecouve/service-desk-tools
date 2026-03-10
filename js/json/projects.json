@@ -2,6 +2,7 @@
     {
         "groupId": "lacoste",
         "groupLabel": "Lacoste",
+        "logoId": "lacoste_menu_300x200.png",
         "items": [
             {
                 "id": "lacoste",
@@ -14,13 +15,8 @@
     {
         "groupId": "fareva - urgo",
         "groupLabel": "Fareva - Urgo",
+        "logoId": "fareva_urgo_menu_300x200.png",
         "items": [
-            {
-                "id": "fareva",
-                "label": "Fareva",
-                "file": "fareva.json",
-                "languages": ["fr", "en"]
-            },
             {
                 "id": "urgo",
                 "label": "Urgo",

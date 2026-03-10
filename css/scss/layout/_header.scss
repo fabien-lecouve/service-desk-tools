@@ -7,6 +7,10 @@ header {
     background-color: $white-secondary;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     padding: 16px;
+    
+    h1 {
+        text-align: center;
+    }
 }
 
 .header-project {

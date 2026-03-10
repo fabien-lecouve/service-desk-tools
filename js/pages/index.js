@@ -14,8 +14,9 @@ async function displayNavigation() {
         const a = element("a", { href: "project.html", class: "menu__link" });
 
         const h3 = element("h3", {}, group.groupLabel);
+        const img = element("img", {src: `images/${group.logoId}`, alt: `Logo de ${group.groupLabel}`});
 
-        a.append(h3);
+        a.append(h3, img);
 
         a.addEventListener("click", () => {
             setGroup(group.items);

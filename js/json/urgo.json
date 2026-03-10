@@ -5,44 +5,79 @@
         "en": "\nSOS URGO\nIT Support\n+33 3 80 44 26 55"
     },
     "categories": {
-        "support": {
-            "label": "support utilisateurs",
-            "subcategories": {
-                "incidents": {
-                    "label": "incidents",
-                    "buttons": [
-                        {
-                            "slug": "incident_followup",
-                            "name": "suivi incident",
-                            "translations": {
-                                "fr": "Votre incident est toujours en cours d'analyse par nos équipes.\nNous vous tiendrons informé dès qu'une mise à jour sera disponible.",
-                                "en": "Your incident is still under review by our teams.\nWe will update you as soon as possible."
-                            }
-                        },
-                        {
-                            "slug": "incident_resolved",
-                            "name": "incident résolu",
-                            "translations": {
-                                "fr": "Votre incident est désormais résolu.\nMerci de nous confirmer que tout fonctionne correctement.",
-                                "en": "Your incident has now been resolved.\nPlease confirm everything is working properly."
-                            }
-                        }
-                    ]
+        "reminders": {
+            "label": "relances",
+            "buttons": [
+                {
+                    "slug": "incoming_reminder_phone_call",
+                    "name": "Relance téléphonique entrante",
+                    "type": "wn",
+                    "translations": {
+                        "fr": "[RELANCE TELEPHONIQUE] L'utilisateur/trice nous recontacte par téléphone"
+                    }
                 },
-                "requests": {
-                    "label": "demandes",
-                    "buttons": [
-                        {
-                            "slug": "request_information",
-                            "name": "demande d'informations",
-                            "translations": {
-                                "fr": "Afin de traiter votre demande, pourriez-vous nous fournir davantage de précisions ?",
-                                "en": "In order to process your request, could you please provide more details?"
-                            }
-                        }
-                    ]
+                {
+                    "slug": "outbound_reminder_phone_call",
+                    "name": "Relance téléphonique sortante",
+                    "type": "wn",
+                    "translations": {
+                        "fr": "[APPEL SORTANT] Je contacte l'utilisateur/trice par téléphone"
+                    }
                 }
-            }
+            ]
+        },
+        "template-diag": {
+            "label": "template diag",
+            "buttons": [
+                {
+                    "slug": "first_incident_request",
+                    "name": "1er sollicitation incident",
+                    "type": "wn",
+                    "translations": {
+                        "fr": "Nom et Prénom de la personne de l'appelant / des personnes impactées :\n\nNuméro de PC : situé sur le code barre / étiquette :\n\nLocalisation précise : site / bâtiment / étage / bureau ou Flex :\n\nNuméro de téléphone de contact :\n\nCréneau horaire de disponibilité :\n\n\n\nProblématique rencontrée :\n\nDate et heure de l'observation de la problématique :\n\nLogiciel / application / environnement :\n\nCode erreur ou message d'erreur :\n\nCapture d'écran :\n\nObservations additionnelles :\n\nTests effectués / croisés :"
+                    }
+                },
+                {
+                    "slug": "first_request",
+                    "name": "1er sollicitation demande",
+                    "type": "wn",
+                    "translations": {
+                        "fr": "Nom et Prénom de l'appelant et/ou du bénéficiaire\n\nNuméro de PC : situé sur le code barre / étiquette\n\nLocalisation précise : site / bâtiment / étage / bureau ou Flex\n\nNuméro de téléphone de contact\n\nCréneau horaire de disponibilité\n\nType de demande : matérielle / logiciel / droits d'accès"
+                    }
+                },
+                {
+                    "slug": "template_before_climbing",
+                    "name": "Template avant escalade",
+                    "type": "wn",
+                    "translations": {
+                        "fr": "Problématique rencontrée :\n\nDate et heure de l'observation de la problématique :\n\nLogiciel / application / environnement :\n\nCode erreur ou message d'erreur :\n\nCapture d'écran :\n\nObservations additionnelles :\n\nTests effectués / croisés :"
+                    }
+                },
+                {
+                    "slug": "OSS Tickets",
+                    "name": "Tickets OSS",
+                    "type": "wn",
+                    "translations": {
+                        "fr": "Nom et Prénom de la personne ou des personnes impactées :\n\nNuméro de PC : situé sur le code barre / étiquette :\n\nLocalisation précise : site / bâtiment / étage / bureau ou Flex :\n\nNuméro de téléphone de contact :\n\nCréneau horaire de disponibilité :\n\n\n\nProblématique rencontrée :\n\nDate et heure de l'observation de la problématique :\n\nLogiciel / application / environnement :\n\nCode erreur ou message d'erreur :\n\nCapture d'écran :\n\nTests effectués / croisés :\n\nObservations additionnelles :"
+                    }
+                },
+                {
+                    "slug": "return_of_material",
+                    "name": "Restitution de matériel",
+                    "type": "wn",
+                    "translations": {
+                        "fr": "Catégorisation : Poste de travail > récupération de poste\n\nNom de la personne a qui était assigné le matériel :\n\nNuméro de PC (étiquette / code barre) :\n\nLieu exact : site / bâtiment/ étage / bureau :\n\nInventaire du matériel à récupérer (clavier, casque, etc…) :"
+                    }
+                },
+                {
+                    "slug": "file_drive_access",
+                    "name": "Accès serveur de fichier",
+                    "type": "wn",
+                    "translations": {
+                        "fr": "Chemin d'accès complet :\n\nType d'accès souhaité : lecture / lecture-écriture\n\nValidation du propriétaire groupe AD :"
+                    }
+                }
+            ]
         }
     }
 }

@@ -233,7 +233,7 @@
                             "label": "Général",
                             "buttons": [
                                 {
-                                    "slug": "access_access_orli_resolution",
+                                    "slug": "incident_access_orli_resolution",
                                     "name": "résolution",
                                     "translations": {
                                         "fr": "Afin de résoudre cet incident, veuillez suivre les étapes suivantes :\n1. Ouvrir le dossier sur le bureau : \"Applications Lacoste\"\n2. Ouvrir le fichier : \"Nouvelle version access orli\"\n3. Une fenêtre s'ouvre et lance l'installation ; attendre la fin de l'installation et refermer la fenêtre\n3. Ouvrir Access Orli (une icône a été créé sur votre bureau)\n\nCes instructions vous ont-elles aidé à résoudre cet incident ?",
@@ -247,7 +247,7 @@
                             "label": "System.mdw",
                             "buttons": [
                                 {
-                                    "slug": "incident_ao_system_mdw_requirements",
+                                    "slug": "incident_access-orli_system_mdw_requirements",
                                     "name": "prérequis",
                                     "translations": {
                                         "fr": "Pouvez vous nous transmettre votre numéro de PC commençant par fr ?\n\nVous pouvez le trouver soit sur votre bureau en haut à droite, soit en ouvrant les paramètres du poste et en allant dans \"Système\".",
@@ -255,7 +255,7 @@
                                     }
                                 },
                                 {
-                                    "slug": "incident_ao_system_mdw_wn",
+                                    "slug": "incident_access-orli_system_mdw_wn",
                                     "name": "work note",
                                     "type": "wn",
                                     "translations": {
@@ -264,7 +264,7 @@
                                     }
                                 },
                                 {
-                                    "slug": "incident_ao_system_mdw_resolution",
+                                    "slug": "incident_access-orli_system_mdw_resolution",
                                     "name": "résolution",
                                     "translations": {
                                         "fr": "Merci pour votre retour.\nLe fichier manquant a bien été ajouté à votre poste.\n\nIl ne vous reste plus qu'à vous rendre sur votre bureau, dans le dossier \"Applications Lacoste\" et à exécuter \"Nouvelle version Access Orli\".\nUne fois cette tâche terminée vous pouvez relancer Access Orli et tout devrait être fonctionnel.\nN'hésitez pas à revenir vers nous si ce n'est pas le cas.",

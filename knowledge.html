@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Service Desk Tools | Base de connaissances</title>
+</head>
+
+<body>
+    <header id="header-knowledge">
+        <h1>PC lent / performances dégradées</h1>
+    </header>
+
+    <main class="kb-main">
+        <section class="kb-main__section kb-main__section--symptoms">
+            <h2>Symptômes</h2>
+            <ul>
+                <li>PC très lent / PC qui rame / Blocages fréquents / Ordinateur qui chauffe</li>
+                <li>Démarrage du PC très long / Ouverture de session lente / Applications longues à s'ouvrir</li>
+                <li>Disque à 100 % / Programmes ne répondent pas</li>
+                <li>Navigateur internet très lent</li>
+                <li>Ventilateur très actif</li>
+            </ul>
+        </section>
+
+        <section class="kb-main__section">
+            <h2>Description de la procédure</h2>
+            <p>Cette procédure permet de diagnostiquer rapidement les causes les plus fréquentes de lenteur sur un poste
+                de travail. Les vérifications suivantes consistent à contrôler l'état général du système (espace disque,
+                utilisation des ressources, programmes actifs et mises à jour éventuelles) afin d'identifier un élément
+                pouvant expliquer les ralentissements. L'objectif est de résoudre les cas simples au niveau support N1
+                ou de collecter les informations nécessaires pour une escalade vers un support technique supérieur si le
+                problème persiste.</p>
+        </section>
+
+        <section class="kb-main__section kb-main__section--worknote">
+            <h2>Work Note</h2>
+            <p>Utilisateur signale des lenteurs sur son poste.<br><br>Vérifications effectuées :<br>- Redémarrage du
+                poste<br>-
+                Vérification espace disque<br>- Vérification utilisation ressources (CPU / RAM / Disque)<br><br>Captures
+                jointes :<br>- Gestionnaire des tâches - Processus<br>- Gestionnaire des tâches - Performance<br>-
+                Espace
+                disque (Ce PC)<br><br>Tests après vérifications :<br><br>Conclusion :</p>
+        </section>
+
+        <section class="kb-main__section">
+            <h2>Vérifications</h2>
+            <div>
+                <div>
+                    <h3><span>1</span>Redémarrer le poste</h3>
+                    <div class="info clues">
+                        <i class="fas fa-info-circle"></i>
+                        <p>Demander à l'utilisateur si un redémarrage a été effectué. Si non, redémarrer
+                            le PC et vérifier
+                            si
+                            les lenteurs persistent.</p>
+                    </div>
+                </div>
+
+                <div>
+                    <h3><span>2</span>Vérifier l'espace disque</h3>
+                    <ul>
+                        <li>Ouvrir <strong>Explorateur de fichiers</strong></li>
+                        <li>Aller dans <strong>Ce PC</strong></li>
+                        <li>Vérifier l'espace libre du disque <strong>C:</strong></li>
+                    </ul>
+                    <div class="info clues">
+                        <i class="fas fa-info-circle"></i>
+                        <p>Si le disque est presque plein (moins de 10-15 % libre) → cela peut
+                            provoquer des lenteurs.</p>
+                    </div>
+                    <div class="info action-to-do">
+                        <i class="fas fa-check"></i>
+                        <p>Faire une capture d'écran du disque C</p>
+                    </div>
+                </div>
+
+                <div>
+                    <h3><span>3</span>Ouvrir le Gestionnaire des tâches</h3>
+                    <ul>
+                        <li>Faire <strong>Ctrl + Maj + Échap</strong></li>
+                        <li>Aller dans l'onglet <strong>Processus</strong></li>
+                    </ul>
+
+                    <p>Observer :</p>
+                    <ul>
+                        <li>CPU</li>
+                        <li>Mémoire</li>
+                        <li>Disque</li>
+                    </ul>
+
+                    <div class="info clues">
+                        <i class="fas fa-info-circle"></i>
+                        <p>Identifier si une ressource est proche de 100 %.</p>
+                    </div>
+
+                    <div class="info action-to-do">
+                        <i class="fas fa-check"></i>
+                        <p>Faire une capture d'écran du Gestionnaire des tâches/Processus</p>
+                    </div>
+                    <div class="info action-to-do">
+                        <i class="fas fa-check"></i>
+                        <p>Faire une capture d'écran du Gestionnaire des tâches/Performance</p>
+                    </div>
+
+                </div>
+
+                <div>
+                    <h3><span>4</span>Identifier un processus consommateur</h3>
+                    <p>Dans le gestionnaire des tâches :</p>
+                    <ul>
+                        <li>Trier par <strong>CPU</strong></li>
+                        <li>Trier par <strong>Mémoire</strong></li>
+                        <li>Trier par <strong>Disque</strong></li>
+                    </ul>
+                    <div class="info clues">
+                        <i class="fas fa-info-circle"></i>
+                        <p>Vérifier si un programme utilise une ressource de manière excessive.</p>
+                    </div>
+                </div>
+
+                <div>
+                    <h3><span>5</span>Vérifier les programmes au démarrage</h3>
+                    <ul>
+                        <li>Dans le <strong>Gestionnaire des tâches</strong> → onglet <strong>Démarrage</strong></li>
+                        <li>Identifier les programmes activés et impact élevé</li>
+                    </ul>
+                    <div class="info clues">
+                        <i class="fas fa-info-circle"></i>
+                        <p>Si nécessaire, désactiver les programmes non nécessaires</p>
+                    </div>
+                </div>
+
+                <div>
+                    <h3><span>6</span>Vérifier les mises à jour Windows</h3>
+                    <ul>
+                        <li>Ouvrir <strong>Paramètres</strong></li>
+                        <li>Aller dans <strong>Windows Update</strong></li>
+                    </ul>
+                    <p>Vérifier si :</p>
+                    <ul>
+                        <li>Une mise à jour est en cours</li>
+                        <li>Un redémarrage est requis</li>
+                    </ul>
+                    <div class="info clues">
+                        <i class="fas fa-info-circle"></i>
+                        <p>Les mises à jour peuvent provoquer des ralentissements temporaires.</p>
+                    </div>
+                </div>
+
+                <div>
+                    <h3><span>8</span>Vérifier l'activité antivirus</h3>
+                    <div class="info clues">
+                        <i class="fas fa-info-circle"></i>
+                        <p>Vérifier si un scan antivirus est en cours, ce qui peut utiliser beaucoup de
+                            ressources.</p>
+                    </div>
+                </div>
+
+                <div>
+                    <h3><span>9</span>Nettoyer les fichiers temporaires</h3>
+                    <ul>
+                        <li>Ouvrir <strong>Nettoyage de disque</strong> ou <strong>Paramètres</strong> →
+                            <strong>Stockage</strong>
+                        </li>
+                        <li>Supprimer les fichiers temporaires inutiles.</li>
+                    </ul>
+                    <p>Cocher uniquement :</p>
+                    <ul>
+                        <li><strong>Fichiers temporaires</strong></li>
+                        <li><strong>Miniatures</strong></li>
+                        <li><strong>Fichiers d'optimisation de livraison</strong></li>
+                        <li><strong>Cache DirectX Shader</strong></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3><span>10</span>Tester les performances après actions</h3>
+                    <p>Demander à l'utilisateur d'ouvrir les applications concernées pour vérifier si les lenteurs
+                        persistent.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- SCRIPTS -->
+    <script src="https://kit.fontawesome.com/a7e2f2f4a7.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

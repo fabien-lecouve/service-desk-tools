@@ -11,12 +11,15 @@ async function displayNavigation() {
     const groups = await fetchJSONData("./js/json/projects.json");
 
     groups.forEach(group => {
-        const a = element("a", { href: "project.html", class: "menu__link" });
+        const a = element("a", { href: "project.html", class: "navbar__link" });
 
-        const h3 = element("h3", {}, group.groupLabel);
-        const img = element("img", {src: `images/${group.logoId}`, alt: `Logo de ${group.groupLabel}`});
+        const h3 = element("h3", { class: "navbar__link--title" }, group.groupLabel);
 
-        a.append(h3, img);
+        const div = element("div", { class: "navbar__link--media" });
+        const img = element("img", { src: `images/${group.logoId}`, alt: `Logo de ${group.groupLabel}` });
+
+        div.append(img);
+        a.append(h3, div);
 
         a.addEventListener("click", () => {
             setGroup(group.items);

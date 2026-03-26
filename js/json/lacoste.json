@@ -539,6 +539,41 @@
                         }
                     ]
                 },
+                "brand-heritage": {
+                    "label": "Brand Heritage",
+                    "group": [
+                        {
+                            "id": "incident_brand-heritage_external",
+                            "label": "Externe",
+                            "buttons": [
+                                {
+                                    "slug": "incident_brand-heritage_external_wn",
+                                    "name": "work note",
+                                    "type": "wn",
+                                    "translations": {
+                                        "fr": "[code]<a title=\"[Brand Heritage] - External account management\" href='kb_view.do?sys_kb_id=6a34624d2b8f7a54f45bf84aec91bfdc' >KB0010799 : [Brand Heritage] - External account management</a>[/code]\n\nCréation compte de USER-ext@lacoste.com\nAjout USERS_HERITAGE_EXTERNAL-U\nAjout \"Heritage Externe\" en Description\nAjout date d'expiration de 3 mois : DATE\nAjout Anne-Claire PAUTHIER en tant que manager\nAjout \"Externe\" dans attribut Division\nAjout \"2\" dans attribut extensionAttribute1\n\nMails avec id et mdp envoyés à EMAILEXTERNE"
+                                    }
+                                },
+                                {
+                                    "slug": "incident_brand-heritage_external_outgoing_email_id",
+                                    "name": "mail sortant ID",
+                                    "translations": {
+                                        "fr": "Votre nom d'utilisateur est : USER-ext@lacoste.com.\n\nL'URL du portail \"Heritage\" est : https://brand-heritage.lacoste.com et est accessible via l'authentification unique (SSO).",
+                                        "en": "Your username is : USER-ext@lacoste.com.\n\nThe \"Heritage portal\" URL is : https://brand-heritage.lacoste.com and accessible via SSO."
+                                    }
+                                },
+                                {
+                                    "slug": "incident_brand-heritage_external_outgoing_email_password",
+                                    "name": "mail sortant ID",
+                                    "translations": {
+                                        "fr": "Votre mot de passe est : PASSWORD\n\nL'URL du portail \"Heritage\" est : https://brand-heritage.lacoste.com et est accessible via l'authentification unique (SSO).",
+                                        "en": "Your password is : PASSWORD\n\nThe \"Heritage portal\" URL is : https://brand-heritage.lacoste.com and accessible via SSO."
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
                 "brand-library": {
                     "label": "Brand Library",
                     "buttons": [
